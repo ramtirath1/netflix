@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="w-[100%] h-[100vh] bg-[url('../images/netflix.jpg')] bg-center bg-cover">
+        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)]">
+            <!-- max-w device ke according 100% ho jati hai and maximum 1170px jayega -->
+            <header class="max-w-[1170px] mx-auto">
+                <!-- sm and and sm ke upar 50% 2 column and mobile ke screen me 30% figure and 70% div space lega -->
+                <div class="grid sm:grid-cols-2 grid-cols-[30%_auto] items-center">
+                    <!-- 30% figure -->
+                <figure >
+                    <img src="../images/logo.png" class="w-[148px]" alt="">
+                </figure>
+                <!-- 70% is div ko -->
+            <div class="flex justify-end gap-[10px]">
+                <!-- above div ko ek button and ek button me divide kar rahe hai -->
+                <div class="relative">
+                    <!-- jisko khiskana hai ek to fix hona chahiye then parent ko relative dena hai and jisko khiskana hai use  absolute dena hai  -->
+                    <svg class="text-white absolute top-[10px] left-[5px]" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
+                    <!-- in sm 5 and 25px and in mobile 5 and 20px only -->
+                    <select name="" id="" class="bg-[black] text-white border-[1px] border-white sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                    </select>
+                </div>
+                <!-- div is a block element so ae poora area cover karti hai isliye sign in niche aa gaya hai so ike parent ko flex denege ek line per laane ke liye -->
+                <button class="bg-[red] px-[10px] rounded-[5px] text-white">Sign In</button>
+            </div>
+        </div>
+            </header>
+
+            <div class="max-w-[1170px] mx-auto sm:py-[150px] py-[50px] text-center text-white ">
+                <h1 class="sm:text-[50px] text-[35px]  font-bold">Unlimited movies, TV shows and more
+                </h1>
+                <h4 class="text-[20px] py-[15px]">Starts at ₹149. Cancel at any time.</h4>
+                <p class="text-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <!-- max-w-[700px] maximum width 700px and in mobile automatic 100% -->
+                <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px] ">
+                    <!-- grid-cols-[70%_auto] its same in all mobile desktop and laptop all -->
+                    <form class=" grid sm:grid-cols-[70%_auto] grid-cols-1 gap-[10px] " action="">
+                        <input type="text" class="border-[1px] bg-[transparent] border-[#ccc] pl-[50px] h-[50px]" placeholder="Email Address">
+                         <!-- when click then place shift above -->
+                         <!-- <div class="input-container">
+                            <input type="text" id="email" class="border-[1px] bg-[transparent] border-[#ccc] pl-[50px] h-[50px] pe-[230px]" placeholder="Email Address" required>
+                        </div> -->
+                    
+
+                        <button class="bg-[red] px-[10px]  h-[50px] rounded-[5px] text-white hover:bg-[rgb(193,17,25)] duration-300">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- end of banner section -->
+
+<!--  start enjoy your tv section -->
+  <section class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[100px] py-[50px]">
+    <div class="max-w-[1170px] mx-auto px-[15px]">
+        <div class="grid sm:grid-cols-2 grid-cols-1 items-center">
+            <div class="text-white">
+                <h2 class="text-[50px] font-bold">Enjoy on your TV</h2>
+                <p class="sm:text-[25px] text-[20px] pt-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fuga facere ab! Vitae unde ea necessitatibus rerum repellendus eum distinctio, porro dignissimos. Dignissimos molestiae similique tempore nihil quisquam animi ea!</p>
+            </div>
+            <figure class="relative">
+                <!-- video ko absolute diya then ae apni jagah ke displace ho gaya -->
+                 <!-- all set but in mobile not responsive so in % percentage to both set in responsive way -->
+                 <video class="absolute w-[70.5%] left-[9.6%] bottom-[27%]">
+                    <source src="https://videos.pexels.com/video-files/1674470/1674470-sd_640_360_24fps.mp4">
+                </video>
+                <img class="w-[90%] relative" src="../images/computer.png" alt="">
+                <img class="w-[150px] top-[250px] right-[60px] absolute" src="../images/remote.png" alt="">
+                <!-- <video class="absolute w-[430px] left-[70px] bottom-[130px]">
+                    <source src="https://videos.pexels.com/video-files/1674470/1674470-sd_640_360_24fps.mp4">
+                </video>
+                <img class="w-[1000px] relative" src="../images/computer.png" alt="">
+                <img class="w-[150px] top-[250px] right-[60px] absolute" src="../images/remote.png" alt=""> -->
+            </figure>
+        </div>
+    </div>
+  </section>
+   <!-- end of enjoy your tv section -->
+
+   <!-- download section start -->
+   <section class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[70px] py-[50px]">
+    <div class="max-w-[1170px] mx-auto px-[15px]">
+        <div class="grid sm:grid-cols-2 grid-cols-1 items-center">
+            <figure class="relative sm:order-1 order-2">
+                <img src="../images/phone.png" alt="">
+                <div class="sm:w-[60%] w-[80%] absolute sm:left-[20%]
+                left-[10%] border-[1px] border-[#ccc] bottom-[0px] grid grid-cols-[70%_auto] bg-[black] items-center rounded-[20px]">
+                <div class="grid grid-cols-[25%_auto] p-[20px] gap-[30px] items-center">
+                    <img class="w-[40px] h-[40px]" src="../images/poster.png" alt="">
+                    <div class="text-white">
+                       <h3 >Stranger Things</h3>
+                        <b>Downloading...</b>
+                    </div>
+                </div>
+                <div class="content-center pl-[20px]">
+                    <img class="w-[30px]" src="../images/load.gif" alt="">
+                </div>
+            </div>
+            </figure>
+            <div class="text-white sm:order-2 order-1">
+                <h2 class="text-[50px] font-bold sm:leading-[65px] leading-[50px]">Download Your Show to watch offline</h2>
+                <p class="sm:text-[25px] text-[20px] pt-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fuga facere ab! Vitae unde ea , porro dignissimos. Dignissimos molestiae similique tempore nihil quisquam animi ea!</p>
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- download section end -->
+
+    <!-- kids section start -->
+    <section class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[70px] py-[50px]">
+        <div class="max-w-[1170px] mx-auto px-[15px]">
+            <div class="grid sm:grid-cols-2 grid-cols-1 items-center">
+                <figure class="relative sm:order-1 order-2 p-[20px]">
+                    <img src="../images/kids.webp" alt="">
+                </figure>
+                <div class="text-white sm:order-2 order-1">
+                    <h2 class="text-[50px] font-bold sm:leading-[65px] leading-[50px]">Create profiles for kids</h2>
+                    <p class="sm:text-[25px] text-[20px] pt-[30px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fuga facere ab! Vitae unde ea , porro dignissimos. Dignissimos molestiae similique tempore nihil quisquam animi ea!</p>
+                </div>
+            </div>
+        </div>
+      </section>
+          <!-- kids section end -->
+
+           <!-- Question Answer Start -->
+           <section class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[70px] py-[50px]">
+            <div class="max-w-[1170px] mx-auto px-[15px]">
+                <h2 class="sm:text-[50px] text-[40px] font-bold text-white text-center">Frequently Asked Questions</h2>
+
+                <div class="py-[30px]">
+                    <!-- question div ko name dena hai access karne ke liye -->
+                    <div class="bg-[#2d2d2d] mb-[15px]">
+                        <div class="p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer	 faqQuestion"><h3>1 What is Netflix?</h3><span class="absolute right-[20px] top-[15px]">+</span></div>
+                        <!--remove padding scale 0 and height 0 that is why its ansower not shwowing but we open the answer section with the help of js -->
+                        <!-- when scale and height 100 then its open -->
+                         <!-- origin top means top to bottom khulega -->
+                          <!-- scale-y-0 use karenge nhi to x axis per bhi kam karege so change it -->
+                        <div class="text-white text-[20px] scale-y-0 h-[0px] origin-top	duration-300">
+                            <p>
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                    </div>
+
+                    <div class="bg-[#2d2d2d] mb-[15px]">
+                        <div class="p-[20px] text-white text-[30px]  relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer	  faqQuestion"><h3>2 How much does Netflix cost?</h3><span class="absolute right-[20px] top-[15px]">+</span></div>
+
+                        <div class="text-white text-[20px] scale-y-0 h-[0px] origin-top	duration-300">
+                            <p>
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                    </div>
+
+                    <div class="bg-[#2d2d2d] mb-[15px]">
+                        <div class="p-[20px] text-white text-[30px]  relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer	 faqQuestion"><h3>3 Where can I watch?</h3><span class="absolute right-[20px] top-[15px]">+</span></div>
+
+                        <div class="text-white text-[20px] scale-y-0 h-[0px] origin-top	duration-300">
+                            <p>
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                    </div>
+
+                    <div class="bg-[#2d2d2d] mb-[15px]">
+                        <div class="p-[20px] text-white text-[30px] relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer	 faqQuestion"><h3>4 How do I cancel?</h3><span class="absolute right-[20px] top-[15px]">+</span></div>
+
+                        <div class="text-white text-[20px] scale-y-0 h-[0px] origin-top duration-300">
+                            <p>
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                    </div>
+
+                    <!-- <div class="bg-[#2d2d2d] mb-[15px]">
+                        <div class="p-[20px] text-white text-[30px relative border-b-[2px] border-[black] hover:bg-[rgb(78,78,78)] duration-300 cursor-pointer	"><h3>What is Netflix?</h3><span class="absolute right-[20px] top-[15px]">+</span></div>
+                        <div class="text-white text-[20px] p-[20px]">
+                            <p>
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                        <p> You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                    </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+
+            <!--  Ready to Watch-->
+
+            <div class="max-w-[1170px] mx-auto sm:py-[50px] py-[50px] text-center text-white ">
+
+                <p class="text-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <!-- max-w-[700px] maximum width 700px and in mobile automatic 100% -->
+                <div class="max-w-[700px] sm:px-[10px] px-[40px] mx-auto mt-[30px] ">
+                    <!-- grid-cols-[70%_auto] its same in all mobile desktop and laptop all -->
+                    <form class=" grid sm:grid-cols-[70%_auto] grid-cols-1 gap-[20px] " action="">
+                        <input type="text" class="border-[1px] bg-[transparent] border-[#ccc] pl-[50px] h-[50px]" placeholder="Email Address">
+                        <button class="bg-[red] px-[10px]  h-[50px] rounded-[5px] text-white hover:bg-[rgb(193,17,25)] duration-300">Get Started</button>
+                    </form>
+                </div>
+            </div>
+          </section>                    
+                       <!-- Question Answer End -->
+               
+           
+          <!-- footer Section start-->
+          <footer class="w-[100%] bg-[black] border-t-[8px] border-t-[#605d5d] sm:py-[60px] py-[50px]">
+            <div class="max-w-[1170px] mx-auto px-[15px]">
+                <!-- use tel: here no becuase tel direct dialmer me lekar chala jata hai-->
+                <h3 class="text-[#ccc] text-[18px]">Questions? Call <a class="underline" href="tel:000-800-919-1743">000-800-919-1743</a></h3>
+
+                <div class="py-[30px] grid sm:grid-cols-3 grid-cols-1">
+                    <div class="text-[#ccc]">
+                        <ul>
+                            <li class="mb-[10px]"><a class="underline" href="#">Faq</a></li>
+                            <li class="mb-[10px]"><a class="underline" href="#">Investor Relations</a></li>
+                            <li class="mb-[10px]"><a class="underline" href="#">Privacy</a></li> 
+                            <li class="mb-[10px]"><a class="underline" href="#">Speed Test</a></li> 
+                            <li class="mb-[10px]"><a class="underline" href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="text-[#ccc]">
+                        <ul>
+                            <li class="mb-[10px]"><a class="underline" href="#">
+                                Help Centre</a></li>
+                            <li class="mb-[10px]"><a class="underline" href="#">Jobs</a></li>
+                            <li class="mb-[10px]"><a class="underline" href="#">Coolie Preference</a></li> 
+                            <li class="mb-[10px]"><a class="underline" href="#">Legal Notices</a></li> 
+                            <li class="mb-[10px]"><a class="underline" href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="text-[#ccc]">
+                        <ul>
+                            <li class="mb-[10px]"><a class="underline" href="#">Account</a></li>
+                            <li class="mb-[10px]"><a class="underline" href="#">Ways to Watch</a></li>
+                            <li class="mb-[10px]"><a class="underline" href="#">Corporate Information</a></li> 
+                            <li class="mb-[10px]"><a class="underline" href="#">Only on Netflix</a></li> 
+                            <li class="mb-[10px]"><a class="underline" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <!-- jisko khiskana hai ek to fix hona chahiye then parent ko relative dena hai and jisko khiskana hai use  absolute dena hai  -->
+                    <svg class="text-white absolute top-[10px] left-[5px]" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
+                    <!-- in sm 5 and 25px and in mobile 5 and 20px only -->
+                    <select name="" id="" class="bg-[black] text-white border-[1px] border-white sm:p-[5px_25px] p-[5px_20px] rounded-[5px]">
+                        <option value="">English</option>
+                        <option value="">Hindi</option>
+                    </select>
+                </div>
+
+                <h3 class="text-[#ccc] pt-[20px]">Netflix India</h3>
+
+            </div>
+            </footer>
+            <!-- footer Section End -->              
+
+</body>
+<script>
+    let allquestion=document.querySelectorAll(".faqQuestion");
+    // to see how many node we have
+    // console.log(allquestion);
+    // v represent element and index is 0,1,2..
+    allquestion.forEach((v,index)=>{
+        // console.log(v);
+        // console.log(index);
+        v.addEventListener("click", ()=>{
+            // question next sibling element is answer
+            v.nextElementSibling.classList.toggle("h-[auto]");
+            v.nextElementSibling.classList.toggle("scale-y-100");
+            v.nextElementSibling.classList.toggle("p-[20px]");
+            // now when we click on question then answer open
+
+            // we want to rotate span + plus icon 45 deg
+            // console.log(v.children);
+            // span index is 1 so target 1
+            v.children[1].classList.toggle("rotate-45");
+
+            // when click on question then only that question open our above code work on that
+            // but here below we apply the answer we not click its close means jis per click hua hai sirf open open rahe remain close ho jyae
+            allquestion.forEach((el,i)=>{
+                if(i!=index){
+                    el.nextElementSibling.classList.remove("h-[auto]","scale-y-100","p-[20px]");
+                    // now check the question we click is open and remain close, if open another then previous open close
+
+                    // baki question per rotate ko remove karna hai isliye
+                    el.children[1].classList.remove("rotate-45");
+                }
+            })
+        })
+    })
+</script>
+</html>

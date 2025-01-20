@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="w-[100%] h-[100vh] bg-[url('../images/netflix.jpg')] bg-center bg-cover">
@@ -269,38 +268,5 @@
             <!-- footer Section End -->              
 
 </body>
-<script>
-    let allquestion=document.querySelectorAll(".faqQuestion");
-    // to see how many node we have
-    // console.log(allquestion);
-    // v represent element and index is 0,1,2..
-    allquestion.forEach((v,index)=>{
-        // console.log(v);
-        // console.log(index);
-        v.addEventListener("click", ()=>{
-            // question next sibling element is answer
-            v.nextElementSibling.classList.toggle("h-[auto]");
-            v.nextElementSibling.classList.toggle("scale-y-100");
-            v.nextElementSibling.classList.toggle("p-[20px]");
-            // now when we click on question then answer open
 
-            // we want to rotate span + plus icon 45 deg
-            // console.log(v.children);
-            // span index is 1 so target 1
-            v.children[1].classList.toggle("rotate-45");
-
-            // when click on question then only that question open our above code work on that
-            // but here below we apply the answer we not click its close means jis per click hua hai sirf open open rahe remain close ho jyae
-            allquestion.forEach((el,i)=>{
-                if(i!=index){
-                    el.nextElementSibling.classList.remove("h-[auto]","scale-y-100","p-[20px]");
-                    // now check the question we click is open and remain close, if open another then previous open close
-
-                    // baki question per rotate ko remove karna hai isliye
-                    el.children[1].classList.remove("rotate-45");
-                }
-            })
-        })
-    })
-</script>
 </html>
